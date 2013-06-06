@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="@drawable/main_bg"
         >
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Hello World, MainActivity"
             />
-</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="20dp"
+            >
+
+        <Button android:id="@+id/start_service_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                style="@style/BootstrapButton"
+                android:text="@string/start_service_btn"
+                />
+        <Button android:id="@+id/stop_service_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/stop_service_btn"
+                style="@style/BootstrapButton"
+                android:visibility="gone"
+                />
+    </LinearLayout>
+</RelativeLayout>
 

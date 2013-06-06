@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">call-answering</string>
+    <string name="app_name">来电答录机</string>
+    <string name="start_service_btn">启动服务</string>
+    <string name="stop_service_btn">停止服务</string>
 </resources>
