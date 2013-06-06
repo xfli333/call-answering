@@ -12,4 +12,6 @@ public class AppConfig {
     public static final String TAG = "Call Answering";
     public static final String SD_PATH = Environment.getExternalStorageDirectory().getAbsolutePath()+"/";
     public static final String SAVE_DIR = SD_PATH+"call_answering/";
+
+    public static final String SERVER_INTENT="info.ishared.android.callanswering.service.AnswerService";
 }
